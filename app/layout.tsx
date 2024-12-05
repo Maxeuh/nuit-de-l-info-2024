@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Duck In The Sea",
-  description: "Projet Nuit de l'info 2024 de l'équipe 🦆 Hunter de l'INSA Centre Val de Loire.",
+  title: "cEAUrps",
+  description: "Projet Nuit de l'info 2024 de l'équipe \"🦆 Hunter\" de l'INSA Centre Val de Loire.",
 };
 
 export default function RootLayout({

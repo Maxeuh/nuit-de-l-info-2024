@@ -1,4 +1,4 @@
-# Duck In The Sea
+# cEAUrps
 Projet [Nuit de l'info 2024](http://nuitdelinfo.com) de l'équipe 🦆 Hunter de l'[INSA Centre Val de Loire](https://insa-centrevaldeloire.fr/fr/).
 
 ## Équipe
