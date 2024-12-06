@@ -13,6 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Ocean } from "@/components/ocean/ocean";
 
 export default function Home() {
   const [state, setState] = useState(0);
@@ -101,14 +102,7 @@ export default function Home() {
           rein={globalState.rein}
           jambe={globalState.jambe}
         />
-        <Human
-          toggleTete={globalState.tete}
-          toggleBrasD={globalState.brasD}
-          toggleBrasG={globalState.brasG}
-          poumon={globalState.poumon}
-          rein={globalState.rein}
-          jambe={globalState.jambe}
-        />
+        <Ocean step={state} />
       </div>
 
       <DrawerGame state={state} />
