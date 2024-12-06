@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div className="h-full">
-      <div className={"absolute z-10 w-full"}>
+      <div className={"absolute z-10 mt-16 w-full"}>
         <SliderGroup
           state={state}
           setState={setState}
