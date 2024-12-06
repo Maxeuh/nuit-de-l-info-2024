@@ -6,6 +6,13 @@ import { HeaderBar } from "@/components/header/HeaderBar";
 import { DrawerGame } from "@/components/drawer/DrawerGame";
 import { Human } from "@/components/human/human";
 import { ChoiceGame } from "@/components/choices/ChoiceGame";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   const [state, setState] = useState(0);
@@ -23,25 +30,77 @@ export default function Home() {
   return (
     <div className="h-full">
       <div className={"absolute w-full z-10"}>
-          <HeaderBar
+        <HeaderBar
           logo="/logo/logo.png"
           name="/logo/logo-text.png"
           links={["/podcasts", "/credits"]}
-            />
-          <SliderGroup
-              state={state}
-              setState={setState}
-              stateLimit={stateLimit}
-          />
-          <ChoiceGame state={state} globalstate={globalState} setState={setGlobalState} />
+        />
+        <SliderGroup
+          state={state}
+          setState={setState}
+          stateLimit={stateLimit}
+        />
+        <ChoiceGame
+          state={state}
+          globalstate={globalState}
+          setState={setGlobalState}
+        />
       </div>
-      {globalState.brasD}
-      {globalState.brasG}
-      {globalState.poumon}
-      {globalState.rein}
-      {globalState.jambe}
-      {globalState.tete}
-      <div className="max-h-screen">
+
+      <div className="max-h-screen md:hidden">
+        <Carousel>
+          <CarouselPrevious
+            onClick={() => {
+              if (state > 0) {
+                setState(state - 1);
+              }
+            }}
+          >
+            Previous
+          </CarouselPrevious>
+          <CarouselContent>
+            <CarouselItem className="pr-0">
+              <Human
+                toggleTete={globalState.tete}
+                toggleBrasD={globalState.brasD}
+                toggleBrasG={globalState.brasG}
+                poumon={globalState.poumon}
+                rein={globalState.rein}
+                jambe={globalState.jambe}
+              />
+            </CarouselItem>
+            <CarouselItem className="pl-0">
+              <Human
+                toggleTete={globalState.tete}
+                toggleBrasD={globalState.brasD}
+                toggleBrasG={globalState.brasG}
+                poumon={globalState.poumon}
+                rein={globalState.rein}
+                jambe={globalState.jambe}
+              />
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselNext
+            onClick={() => {
+              if (state < 2) {
+                setState(state + 1);
+              }
+            }}
+          >
+            Next
+          </CarouselNext>
+        </Carousel>
+      </div>
+
+      <div className="hidden md:grid max-h-screen grid-cols-[1fr_3fr]">
+        <Human
+          toggleTete={globalState.tete}
+          toggleBrasD={globalState.brasD}
+          toggleBrasG={globalState.brasG}
+          poumon={globalState.poumon}
+          rein={globalState.rein}
+          jambe={globalState.jambe}
+        />
         <Human
           toggleTete={globalState.tete}
           toggleBrasD={globalState.brasD}
@@ -51,7 +110,8 @@ export default function Home() {
           jambe={globalState.jambe}
         />
       </div>
-      <DrawerGame state={state}/>
+
+      <DrawerGame state={state} />
     </div>
   );
 }

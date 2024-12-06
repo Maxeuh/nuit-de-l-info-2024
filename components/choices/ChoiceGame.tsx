@@ -26,7 +26,7 @@ interface ChoiceProps {
 export const ChoiceGame: React.FC<ChoiceProps> = (props) => {
     return (
         <div className="flex justify-center bg-blue-500">
-        <Button variant="outline" size="icon" className="rounded-full border-none bg-blue-500 text-white hover:bg-white hover:text-blue-500 w-1/2" 
+        <Button variant="outline" size="icon" className="rounded-full border-none bg-blue-500 text-white hover:bg-white text-wrap hover:text-blue-500 w-1/2" 
         onClick={() => {
             if (props.globalstate.tete || props.globalstate.brasD || props.globalstate.brasG || props.globalstate.jambe || props.globalstate.poumon || props.globalstate.rein) {
                 props.setState({step:props.state,tete: false, brasD: false, brasG: false, jambe: false, poumon: false, rein: false});
@@ -56,7 +56,7 @@ export const ChoiceGame: React.FC<ChoiceProps> = (props) => {
         }}>
             {Data[props.state].choix1}
         </Button>
-        <Button variant="outline" size="icon" className="rounded-full border-none bg-blue-500 text-white hover:bg-white hover:text-blue-500 w-1/2"
+        <Button variant="outline" size="icon" className="rounded-full border-none bg-blue-500 text-white hover:bg-white hover:text-blue-500 w-1/2 text-wrap"
         onClick={() => {
             if (props.globalstate.tete || props.globalstate.brasD || props.globalstate.brasG || props.globalstate.jambe || props.globalstate.poumon || props.globalstate.rein) {
                 props.setState({step:props.state,tete: false, brasD: false, brasG: false, jambe: false, poumon: false, rein: false});
