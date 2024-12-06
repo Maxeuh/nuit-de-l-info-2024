@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import pokemons from '@/app/data/pokemons.json';
 
 const POKEMONS_FILE = '/pokemons.json';
 
@@ -9,26 +10,21 @@ const QRImage = dynamic(() => import('react-qrbtf').then((mod) => mod.QRImage), 
   ssr: false,
 });
 
+interface Pokemon {
+    id: string;
+    image: string;
+    message: string;
+    source: string;
+}
+  
 const QrCodeComponent = () => {
-  const [randomEntry, setRandomEntry] = useState(null);
-
-  useEffect(() => {
-    // Charger le fichier JSON
-    const fetchData = async () => {
-      try {
-        const response = await fetch(POKEMONS_FILE);
-        const data = await response.json();
-
-        // Sélectionner une entrée aléatoire
-        const randomIndex = Math.floor(Math.random() * data.length);
-        setRandomEntry(data[randomIndex]);
-      } catch (error) {
-        console.error('Erreur lors du chargement du JSON:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
+    const [randomEntry, setRandomEntry] = useState<Pokemon | null>(null);
+  
+    useEffect(() => {
+      // Sélectionner une entrée aléatoire
+      const randomIndex = Math.floor(Math.random() * pokemons.length);
+      setRandomEntry(pokemons[randomIndex]);
+    }, []);
 
   if (!randomEntry) {
     return <p>Chargement...</p>;

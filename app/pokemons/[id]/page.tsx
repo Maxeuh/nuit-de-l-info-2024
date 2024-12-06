@@ -2,24 +2,25 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import path from 'path';
 import { promises as fs } from 'fs';
-
+import pokemons from '@/app/data/pokemons.json';
 
 const POKEMONS_FILE = '/pokemons.json';
 
-export default async function PokemonsPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default async function PokemonsPage(
+  props: {
+    params: Promise<{ id: string }>;
+  }
+) {
+  const params = await props.params;
   const { id } = params;
 
   // Lire le fichier JSON pour récupérer les données
-  const filePath = path.join(process.cwd(), 'public', POKEMONS_FILE);
-  const fileContents = await fs.readFile(filePath, 'utf-8');
-  const data = JSON.parse(fileContents);
-
+  //const filePath = path.join(process.cwd(), 'public', POKEMONS_FILE);
+  //const fileContents = await fs.readFile(filePath, 'utf-8');
+  //const data = JSON.parse(fileContents);
+  const pokemon = pokemons[parseInt(id)];
   // Vérifier si l'ID est valide
-  const pokemon = data[parseInt(id)];
+  //const pokemon = data[parseInt(id)];
   if (!pokemon) {
     notFound(); // Renvoie une erreur 404 si l'ID n'existe pas
   }
