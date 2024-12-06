@@ -1,15 +1,14 @@
 "use client"
 
-import { useState } from "react";
-import { SliderGroup } from "@/components/slider/SliderGroup"
+import { HeaderBar } from "@/components/header/HeaderBar";
 
 export default function Home() {
-  const [state, setState] = useState(0);
+  const link = ["/credits", "/podcasts"];
 
   return (
     <div className="p-4">
-      <SliderGroup state={state} setState={setState} />
-      Statut du jeu : {state}
+      <HeaderBar logo="/logo/Logo-goute.png" name="/logo/logo-text.png" links={link} />
+     
     </div>
   );
 }
