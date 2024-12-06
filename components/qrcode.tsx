@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import pokemons from '@/app/data/pokemons.json';
 
-const POKEMONS_FILE = '/pokemons.json';
-
 const QRImage = dynamic(() => import('react-qrbtf').then((mod) => mod.QRImage), {
   ssr: false,
 });

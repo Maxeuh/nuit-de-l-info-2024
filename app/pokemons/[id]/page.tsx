@@ -1,10 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import path from 'path';
-import { promises as fs } from 'fs';
 import pokemons from '@/app/data/pokemons.json';
-
-const POKEMONS_FILE = '/pokemons.json';
 
 export default async function PokemonsPage(
   props: {
