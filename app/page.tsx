@@ -18,7 +18,7 @@ export default function Home() {
     rein: false,
     jambe: false,
   });
-  const stateLimit = 7;
+  const stateLimit = 5;
 
   return (
     <div className="h-full">
