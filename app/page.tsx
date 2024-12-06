@@ -13,7 +13,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Grid } from "lucide-react";
 
 export default function Home() {
   const [state, setState] = useState(0);
