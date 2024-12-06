@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 interface AudioPlayerProps {
   title: string;
@@ -9,8 +9,11 @@ interface AudioPlayerProps {
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ title, audioSrc }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0); // Progression en secondes
+  const [duration, setDuration] = useState(0); // Durée totale en secondes
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  // Fonction pour démarrer/arrêter la lecture
   const togglePlay = () => {
     if (audioRef.current) {
       if (isPlaying) {
@@ -22,27 +25,67 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ title, audioSrc }) => {
     }
   };
 
+  // Met à jour la progression
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setProgress(audioRef.current.currentTime);
+    }
+  };
+
+  // Définit la durée totale lors du chargement des métadonnées
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  };
+
+  // Permet de naviguer dans l'audio via la barre de progression
+  const handleSeek = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = Number(event.target.value);
+      setProgress(audioRef.current.currentTime);
+    }
+  };
+
+  // Formater les secondes en "minutes:secondes"
+  const formatTime = (time: number): string => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+  };
+
   return (
-    <div style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+    <div className="flex flex-col items-center mb-4">
+      {/* Bouton Play/Pause */}
       <button
         onClick={togglePlay}
-        style={{
-          width: "50px",
-          height: "50px",
-          borderRadius: "50%",
-          background: "#007BFF",
-          color: "white",
-          border: "none",
-          fontSize: "16px",
-          cursor: "pointer",
-        }}
+        className="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl"
       >
         {isPlaying ? "❚❚" : "▶"}
       </button>
-      <div style={{ marginLeft: "10px", flexGrow: 1 }}>
-        <p style={{ margin: "0", fontSize: "14px", color: "#007BFF" }}>{title}</p>
+      <p className="text-blue-500 text-sm mt-2">{title}</p>
+
+      {/* Barre de progression avec timing */}
+      <div className="w-full mt-2 flex items-center">
+        <span className="text-xs text-gray-500 mr-2">{formatTime(progress)}</span>
+        <input
+          type="range"
+          min="0"
+          max={duration.toString()}
+          value={progress}
+          onChange={handleSeek}
+          className="w-full"
+        />
+        <span className="text-xs text-gray-500 ml-2">{formatTime(duration)}</span>
       </div>
-      <audio ref={audioRef} src={audioSrc}></audio>
+
+      {/* Élément audio caché */}
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleLoadedMetadata}
+      ></audio>
     </div>
   );
 };
