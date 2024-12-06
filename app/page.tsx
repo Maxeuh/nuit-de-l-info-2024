@@ -22,18 +22,20 @@ export default function Home() {
 
   return (
     <div className="h-full">
-      <HeaderBar
-        logo="/logo/logo.png"
-        name="/logo/logo-text.png"
-        links={["/podcasts", "/credits"]}
-      />
-      <SliderGroup
-        state={state}
-        setState={setState}
-        stateLimit={stateLimit}
-      />
-      <ChoiceGame state={state} globalstate={globalState} setState={setGlobalState} />
-      <div className="max-w-sm max-h-screen">
+      <div className={"absolute w-full z-10"}>
+          <HeaderBar
+          logo="/logo/logo.png"
+          name="/logo/logo-text.png"
+          links={["/podcasts", "/credits"]}
+            />
+          <SliderGroup
+              state={state}
+              setState={setState}
+              stateLimit={stateLimit}
+          />
+          <ChoiceGame state={state} globalstate={globalState} setState={setGlobalState} />
+      </div>
+      <div className="max-h-screen">
         <Human
           toggleTete={globalState.tete}
           toggleBrasD={globalState.brasD}

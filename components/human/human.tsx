@@ -10,7 +10,7 @@ interface BodyImageProps {
 
 const BodyImage: FC<BodyImageProps> = ({src}) => {
     return (<img src={src} alt="Human Image"
-                 className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 max-h-screen pt-32 pb-16"}/>)
+                 className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 max-h-screen pt-40 pb-16"}/>)
 }
 
 interface HumanProps {
