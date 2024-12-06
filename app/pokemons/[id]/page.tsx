@@ -6,7 +6,13 @@ import { promises as fs } from 'fs';
 
 const POKEMONS_FILE = '/pokemons.json';
 
-const PokemonsPage = async ({ params }) => {
+type PokemonPageParams = {
+  params: {
+    id: string;
+  };
+};
+
+const PokemonsPage = async ({ params }: PokemonPageParams) => {
   const { id } = params;
 
   // Lire le fichier JSON pour récupérer les données
