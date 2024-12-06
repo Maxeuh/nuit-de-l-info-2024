@@ -1,7 +1,15 @@
 import { Button } from "../ui/button";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "../ui/drawer";
 
-export const DrawerGame = () => {
+import Data from "@/public/scenarios.json";
+
+
+
+interface DrawerGameProps {
+    state: number;
+}
+
+export const DrawerGame = ({ state }: DrawerGameProps) => {
     return (
         <Drawer>
             <DrawerTrigger asChild>
@@ -18,7 +26,9 @@ export const DrawerGame = () => {
 
                 </div>
                 <div className="px-4 text-base leading-relaxed text-white">
-                <p>Lorem ipsum dolor sit amet, Fusce auctor congue hendrerit, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor congue hendrerit.Lorem ipsum dolor sit amet, Fusce auctor congue hendrerit, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor congue hendrerit</p>
+                {
+                    Data[state].text
+                }
                 </div>           
             </DrawerContent>
         </Drawer>
