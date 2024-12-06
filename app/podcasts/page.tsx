@@ -19,9 +19,7 @@ const Home: React.FC = () => {
           Plongez avec nous pour une expérience éclaboussante
         </h1>
 
-        <h3 className="text-left text-xl font-bold mx-2 mb-4 text-blue-800">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor congue hendrerit. Etiam non imperdiet lectus. Suspendisse venenatis ligula nulla, eget consectetur urna lacinia in.
-        </h3>
+        
         <div className="space-y-4">
           <AudioPlayer
             title="Podcast 1"
