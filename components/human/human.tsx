@@ -3,6 +3,16 @@ import Image from "next/image";
 
 import BG from "./bg-reverse.png"
 
+interface BodyImageProps {
+    src: string;
+}
+
+
+const BodyImage: FC<BodyImageProps> = ({src}) => {
+    return (<img src={src} alt="Human Image"
+                 className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 max-h-screen pt-40 pb-16"}/>)
+}
+
 interface HumanProps {
     toggleTete: boolean;
     toggleBrasD: boolean;
@@ -15,31 +25,18 @@ interface HumanProps {
 export const Human: FC<HumanProps> = ({toggleTete, toggleBrasD, toggleBrasG, poumon, rein, jambe}) => {
     return (
         <div className="relative h-screen bg-[#103565] ">
+
             <Image src={BG} alt="background" className={"absolute bottom-0 w-full"}/>
-            <img src={"/human/base.png"} alt="Human Image" className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>
-            {toggleBrasD ? <img src={"/human/bras-d.png"} alt="Human Image"
-                                className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/> :
-                <img src={"/human/base-bras-d.png"} alt="Human Image"
-                     className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
-            {toggleBrasG ? <img src={"/human/bras-g.png"} alt="Human Image"
-                                className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/> :
-                <img src={"/human/base-bras-g.png"} alt="Human Image"
-                     className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
+            <BodyImage src={"/human/base.png"}/>
+            {toggleBrasD ? <BodyImage src={"/human/bras-d.png"}/> : <BodyImage src={"/human/base-bras-d.png"}/>}
+            {toggleBrasG ? <BodyImage src={"/human/bras-g.png"}/> : <BodyImage src={"/human/base-bras-g.png"}/>}
+            {jambe ? <BodyImage src={"/human/jambe.png"}/> : <BodyImage src={"/human/base-jambe.png"}/>}
 
-            {jambe ? <img src={"/human/jambe.png"} alt="Human Image"
-                          className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/> :
-                <img src={"/human/base-jambe.png"} alt="Human Image"
-                     className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
-
-            {(!poumon && !rein) && <img src={"/human/base-ventre.png"} alt="Human Image"
-                                        className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
-            {rein && <img src={"/human/rein.png"} alt="Human Image"
-                                        className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
-            {poumon && <img src={"/human/poumon.png"} alt="Human Image"
-                          className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
-
-            {toggleTete && <img src={"/human/tete.png"} alt="Human Image"
-                                className={"absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"}/>}
+            {(!poumon && !rein) && <BodyImage src={"/human/base-ventre.png"}/>}
+            {rein && <BodyImage src={"/human/rein.png"}/>}
+            {poumon && <BodyImage src={"/human/poumon.png"}/>}
+            {toggleTete && <BodyImage src={"/human/tete.png"}/>}
         </div>
     )
 }
+
