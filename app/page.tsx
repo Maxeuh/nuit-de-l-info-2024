@@ -1,10 +1,12 @@
 "use client"
-
+r
 import { useState } from "react";
 import { SliderGroup } from "@/components/slider/SliderGroup"
 import { DrawerGame } from "@/components/drawer/drawer";
+import { HeaderBar } from "@/components/header/HeaderBar";
 
 export default function Home() {
+
   const [state, setState] = useState(0);
   const stateLimit = 5;
 
