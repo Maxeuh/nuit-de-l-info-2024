@@ -35,6 +35,12 @@ export default function Home() {
           />
           <ChoiceGame state={state} globalstate={globalState} setState={setGlobalState} />
       </div>
+      {globalState.brasD}
+      {globalState.brasG}
+      {globalState.poumon}
+      {globalState.rein}
+      {globalState.jambe}
+      {globalState.tete}
       <div className="max-h-screen">
         <Human
           toggleTete={globalState.tete}

@@ -32,7 +32,7 @@ export const Human: FC<HumanProps> = ({toggleTete, toggleBrasD, toggleBrasG, pou
             {toggleBrasG ? <BodyImage src={"/human/bras-g.png"}/> : <BodyImage src={"/human/base-bras-g.png"}/>}
             {jambe ? <BodyImage src={"/human/jambe.png"}/> : <BodyImage src={"/human/base-jambe.png"}/>}
 
-            {(!poumon && !rein) && <BodyImage src={"/human/ventre.png"}/>}
+            {(!poumon && !rein) && <BodyImage src={"/human/base-ventre.png"}/>}
             {rein && <BodyImage src={"/human/rein.png"}/>}
             {poumon && <BodyImage src={"/human/poumon.png"}/>}
             {toggleTete && <BodyImage src={"/human/tete.png"}/>}
