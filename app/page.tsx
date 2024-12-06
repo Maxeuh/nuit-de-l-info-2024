@@ -12,17 +12,19 @@ export default function Home() {
 
   return (
     <div className="h-full">
-      <HeaderBar
-        logo="/logo/logo.png"
-        name="/logo/logo-text.png"
-        links={["/podcasts", "/credits"]}
-      />
-      <SliderGroup
-        state={state}
-        setState={setState}
-        stateLimit={stateLimit}
-      />
-      <div className="max-w-sm max-h-screen">
+        <div className={"absolute z-10 w-full"}>
+          <HeaderBar
+            logo="/logo/logo.png"
+            name="/logo/logo-text.png"
+            links={["/podcasts", "/credits"]}
+          />
+          <SliderGroup
+            state={state}
+            setState={setState}
+            stateLimit={stateLimit}
+          />
+        </div>
+      <div className="max-h-screen">
         <Human
           toggleTete={true}
           toggleBrasD={true}
