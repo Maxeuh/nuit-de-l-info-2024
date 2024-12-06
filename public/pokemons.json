@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "image": "magikarp.gif",
+        "message": "La surpêche, comme la transformation du Magikarp en un puissant Gyarados, déstabilise les écosystèmes marins. Les espèces de poissons et autres animaux marins sont menacées par des techniques de pêche non durables. Pour sauver nos océans, il est essentiel de choisir des produits de la mer durables et de soutenir des pratiques de pêche responsables.",
+        "source": "https://www.viande.info/la-peche"
+    },
+    {
+        "id": "2",
+        "image": "bulbizarre.gif",
+        "message": "Les pesticides et l'urbanisation mettent en danger les habitats naturels. Adoptons des pratiques agricoles durables pour préserver la biodiversité.",
+        "source": "https://www.pan-europe.info/issues/pesticides-and-loss-biodiversity"
+    },
+    {
+        "id": "3",
+        "image": "carapuce.gif",
+        "message": "Carapuce nous rappelle que l'océan est menacé par la pollution plastique. Chaque année, des millions de tonnes de plastique se retrouvent dans nos mers, mettant en danger la faune marine, y compris les tortues et poissons. Il est crucial d'agir en réduisant notre consommation de plastiques jetables, en recyclant et en nettoyant nos plages.",
+        "source": "https://www.surfrider.org/initiatives/plastic-pollution"
+    },
+    {
+        "id": "4",
+        "image": "tentacool.gif",
+        "message": "Tentacool et Tentacruel vivent dans les mers, un écosystème en danger à cause de l’acidification des océans. Le dioxyde de carbone absorbé par l'océan modifie son pH, menaçant la vie marine, notamment les coraux et les coquillages. Nous devons lutter contre les émissions de CO2 et protéger nos océans des effets du réchauffement climatique.",
+        "source": "https://www.nationalgeographic.fr/environnement/tout-comprendre-sur-lacidification-des-oceans"
+    },
+    {
+        "id": "5",
+        "image": "wailord.gif",
+        "message": "Wailord, représentant la majesté des baleines, nous rappelle la nécessité de protéger ces géants des océans. Les baleines sont menacées par la pollution, le changement climatique et la chasse illégale. Leur protection est essentielle pour l'équilibre de la vie marine et pour maintenir la biodiversité dans nos océans.",
+        "source": "https://oceansinitiative.org/"
+    },
+    {
+        "id": "6",
+        "image": "corayon.gif",
+        "message": "Les récifs coralliens, comme ceux que représente Corayon, sont des écosystèmes marins vitaux pour des milliers d'espèces. Malheureusement, ils sont gravement menacés par le réchauffement de la planète, la pollution et la surpêche. Nous devons protéger ces récifs en réduisant nos émissions de gaz à effet de serre et en soutenant les initiatives de préservation.",
+        "source": "https://fr.unesco.org/themes/oceans-et-r%C3%A9cifs-coralliens"
+    },
+    {
+        "id": "7",
+        "image": "clamperl.gif",
+        "message": "Clamperl, un Pokémon inspiré par les coquillages, représente les espèces de mollusques marins en danger. Ces créatures sont cruciales pour l'équilibre écologique des fonds marins, mais elles sont menacées par la pollution et l'exploitation commerciale. En protégeant les coquillages et autres organismes marins, nous préservons l'ensemble de l'écosystème marin.",
+        "source": "https://www.mcsuk.org/"
+    },
+    {
+        "id": "8",
+        "image": "garbodor.gif",
+        "message": "Garbodor, symbole des déchets, nous rappelle que nos océans deviennent des décharges à ciel ouvert. Chaque minute, l'équivalent d'un camion de plastique est déversé dans l'océan, mettant en danger des millions d'espèces marines et contaminant la chaîne alimentaire. En adoptant des comportements responsables — tri, recyclage, et réduction des déchets — nous pouvons limiter cet fléau et préserver nos mers.",
+        "source": "https://fr.unesco.org/themes/pollution-maritime"
+    },
+    {
+        "id": "9",
+        "image": "bob.gif",
+        "message": "Si Bob l'éponge vivait vraiment dans un ananas sous la mer, il aurait peut-être du mal à respirer aujourd'hui. La pollution marine et la destruction des habitats sous-marins menacent la vie océanique, depuis les récifs coralliens jusqu'aux fonds marins. Chaque déchet jeté dans la nature peut finir dans l'océan. Adoptez des gestes simples pour protéger ces écosystèmes fragiles : réduisez vos déchets, recyclez et participez aux initiatives de nettoyage des plages.",
+        "source": "https://www.nationalgeographic.fr/environnement/tout-comprendre-sur-la-pollution-marine"
+    },
+    {
+        "id": "10",
+        "image": "",
+        "message": "",
+        "source": ""
+    }
+]
