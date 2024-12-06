@@ -18,7 +18,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <div className={"absolute z-10 w-full"}>
-          <HeaderBar logo="/logo/logo.png" name="/logo/logo-text.png" links={["/podcasts","/credits"]}/>
+          <HeaderBar logo="/logo/logo.png" name="/logo/logo-text.png" links={["/","/podcasts","/credits"]}/>
         </div>
         {children}
       </body>

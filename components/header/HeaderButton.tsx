@@ -32,7 +32,7 @@ export const HeaderButton: React.FC<HeaderButtonProps> = ({links}) => {
             <AlertDialogCancel>Rester</AlertDialogCancel>
             {links.map((link) => (
                 <AlertDialogAction asChild key={link}>
-                  <Link href={link}>{link}</Link>
+                  <Link href={link}>{link === "/" ? "Accueil" : link.charAt(1).toUpperCase() + link.slice(2)}</Link>
                 </AlertDialogAction>
             ))}
           </AlertDialogFooter>  
