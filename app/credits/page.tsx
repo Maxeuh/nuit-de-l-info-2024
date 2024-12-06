@@ -11,6 +11,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import DefisJSON from "@/public/defis.json";
 import { Defis } from "@/components/credits/defis";
+import { Button } from "@/components/ui/button";
 
 interface Contributor {
   login: string;
@@ -45,7 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="m-4">
+    <div className="p-6">
         <h2 className="p-4 text-center text-4xl font-bold">"🦆 Hunter" c'est nous</h2>
         <div className="m-auto w-3/4 p-4">
         {error ? (
@@ -118,6 +119,14 @@ export default function Home() {
 
         <h2 className="p-4 text-center text-4xl font-bold">Merci à l'INSA</h2>
         <div className="max-h-[80vh] text-center">Un gros merci à notre école, l'INSA Centre Val de Loire, pour nous avoir aidé à organiser cette nuit, et pour la Red Bull, car franchement on aurait jamais tenu jusqu'au bout sans ça...</div>
+    
+        <div className="mt-12 text-center">
+        <Button asChild className="">
+        <a href={"https://github.com/Maxeuh/nuit-de-l-info-2024"} target="_blank" rel="noopener noreferrer">
+            GitHub du projet
+        </a>
+        </Button>
+        </div>
     </div>
   );
 }
