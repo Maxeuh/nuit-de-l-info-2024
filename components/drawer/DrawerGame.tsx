@@ -3,7 +3,13 @@ import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, Dr
 
 import Data from "@/public/scenarios.json";
 
-export const DrawerGame = ({state}) => {
+
+
+interface DrawerGameProps {
+    state: number;
+}
+
+export const DrawerGame = ({ state }: DrawerGameProps) => {
     return (
         <Drawer>
             <DrawerTrigger asChild>
