@@ -59,15 +59,15 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ title, audioSrc }) => {
       {/* Bouton Play/Pause */}
       <button
         onClick={togglePlay}
-        className="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl"
+        className="w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center text-xl"
       >
         {isPlaying ? "❚❚" : "▶"}
       </button>
-      <p className="text-blue-500 text-sm mt-2">{title}</p>
+      <p className="text-blue-900 text-m mt-2">{title}</p>
 
       {/* Barre de progression avec timing */}
       <div className="w-full mt-2 flex items-center">
-        <span className="text-xs text-gray-500 mr-2">{formatTime(progress)}</span>
+        <span className="text-s text-blue-900 mr-2">{formatTime(progress)}</span>
         <input
           type="range"
           min="0"
@@ -76,7 +76,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ title, audioSrc }) => {
           onChange={handleSeek}
           className="w-full"
         />
-        <span className="text-xs text-gray-500 ml-2">{formatTime(duration)}</span>
+        <span className="text-s text-blue-900 ml-2">{formatTime(duration)}</span>
       </div>
 
       {/* Élément audio caché */}
