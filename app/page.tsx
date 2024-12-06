@@ -5,9 +5,19 @@ import { SliderGroup } from "@/components/slider/SliderGroup";
 import { HeaderBar } from "@/components/header/HeaderBar";
 import { DrawerGame } from "@/components/drawer/DrawerGame";
 import { Human } from "@/components/human/human";
+import { ChoiceGame } from "@/components/choices/ChoiceGame";
 
 export default function Home() {
   const [state, setState] = useState(0);
+  const [globalState, setGlobalState] = useState({
+    step: 0,
+    tete: false,
+    brasD: false,
+    brasG: false,
+    poumon: false,
+    rein: false,
+    jambe: false,
+  });
   const stateLimit = 7;
 
   return (
@@ -22,17 +32,18 @@ export default function Home() {
         setState={setState}
         stateLimit={stateLimit}
       />
+      <ChoiceGame state={state} globalstate={globalState} setState={setGlobalState} />
       <div className="max-w-sm max-h-screen">
         <Human
-          toggleTete={true}
-          toggleBrasD={true}
-          toggleBrasG={true}
-          poumon={true}
-          rein={true}
-          jambe={true}
+          toggleTete={globalState.tete}
+          toggleBrasD={globalState.brasD}
+          toggleBrasG={globalState.brasG}
+          poumon={globalState.poumon}
+          rein={globalState.rein}
+          jambe={globalState.jambe}
         />
       </div>
-      <DrawerGame state={state} />
+      <DrawerGame state={state}/>
     </div>
   );
 }
