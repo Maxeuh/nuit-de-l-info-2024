@@ -29,12 +29,13 @@ const QrCodeComponent = () => {
   }
 
   return (
-    <div className="w-52 h-52 flex flex-col items-center justify-center text-center">
+    <div className="w-24 h-24 flex flex-col items-center justify-center text-center">
       <QRImage 
         value={`${window.location.origin}/pokemons/${randomEntry.id}`}
         image={`/${randomEntry.image}`}
         type="round"
-        size={150}
+        size={125}
+        level="L"
       />
     </div>
   );
