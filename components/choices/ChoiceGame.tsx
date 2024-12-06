@@ -50,7 +50,7 @@ export const ChoiceGame: React.FC<ChoiceProps> = (props) => {
                 case 5:
                     props.setState({...props.globalstate, rein: false});
                     break;
-                case _:
+                default:
                     break;
             }
         }}>
@@ -80,7 +80,7 @@ export const ChoiceGame: React.FC<ChoiceProps> = (props) => {
                 case 5:
                     props.setState({...props.globalstate, rein: false});
                     break;
-                case _:
+                default:
                     break;
             }
         }}>
