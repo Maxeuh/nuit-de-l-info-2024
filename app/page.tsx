@@ -11,7 +11,7 @@ export default function Home() {
   const stateLimit = 5;
 
   return (
-    <div className="p-4">
+    <div className="h-full p-4">
       <HeaderBar logo="/logo/logo.png" name="/logo/logo-text.png" links={["/podcasts","/credits"]}/>
       <SliderGroup state={state} setState={setState} stateLimit={stateLimit} />
       Statut du jeu : {state}
