@@ -1,5 +1,4 @@
 import Image from "next/image";
-import QrCodeComponent from "@/components/qrcode";
 
 export default function Home() {
   return (
