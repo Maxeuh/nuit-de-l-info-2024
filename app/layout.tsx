@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { HeaderBar } from "@/components/header/HeaderBar";
 
 export const metadata: Metadata = {
   title: "cEAUrps",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <HeaderBar logo="/logo/logo.png" name="/logo/logo-text.png" links={["/podcasts","/credits"]}/>
         {children}
       </body>
     </html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "titre": "Défi de la nuit 2024",
+    "description": "Ce défi correspond au sujet national qui sera dévoilé au lancement de la nuit.",
+    "entreprise": "NUIT DE L'INFO",
+    "logo": "nuitinfo.svg",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/174"
+  },
+  {
+    "id": 2,
+    "titre": "My credit page so amazing",
+    "description": "Créer une page crédit interactive et visuellement attrayante mettant en valeur les contributeurs du projet.",
+    "entreprise": "JD INFORMATIQUE",
+    "logo": "jdinfo.jpg",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/457"
+  },
+  {
+    "id": 3,
+    "titre": "Respect de la vie privée",
+    "description": "Fournir une analyse des risques sur la vie privée dans l'application développée.",
+    "entreprise": "INSA CENTRE VAL DE LOIRE",
+    "logo": "insacvl.png",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/36"
+  },
+  {
+    "id": 4,
+    "titre": "Shake That Site",
+    "description": "Rendre les sites web drôles et vivants.",
+    "entreprise": "BluesTech",
+    "logo": "bluestech.png",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/409"
+  },
+  {
+    "id": 5,
+    "titre": "IA en Action",
+    "description": "Montrer comment l'IA aide à coder plus vite et mieux dans une courte vidéo.",
+    "entreprise": "LA MIAGE DE PARIS NANTERRE",
+    "logo": "miagenanterre.png",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/426"
+  },
+  {
+    "id": 6,
+    "titre": "Catch Them All",
+    "description": "Créer une application pour générer des QR codes en forme de Pokémon avec des pop-ups de sensibilisation.",
+    "entreprise": "PROXIAD",
+    "logo": "proxiad.png",
+    "lien": "https://www.nuitdelinfo.com/inscription/defis/469"
+  }
+]
