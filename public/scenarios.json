@@ -1,20 +1,32 @@
 [
   {
-    "text": "Depuis les années 1980, les océans se sont réchauffés de plus de 4°C, causant le blanchissement des coraux, la mortalité massive de la faune marine et réduisant leur capacité d'absorption de CO2, aggravant le changement climatique. Les solutions incluent la création d'aires marines protégées, des initiatives de restauration comme Coralassist, et des approches innovantes pour renforcer la résilience des coraux face à la chaleur."
+    "text": "Depuis les années 1980, les océans se sont réchauffés de plus de 4°C, causant le blanchissement des coraux, la mortalité massive de la faune marine et réduisant leur capacité d'absorption de CO2, aggravant le changement climatique. Les solutions incluent la création d'aires marines protégées, des initiatives de restauration comme Coralassist, et des approches innovantes pour renforcer la résilience des coraux face à la chaleur.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens"
   },
   {
-    "text": "Le réchauffement et la fonte des glaces modifient les courants océaniques, provoquant des changements climatiques majeurs (ex. hivers plus rigoureux en Europe), réduisant l'absorption du CO2 et perturbant la chaîne alimentaire marine. Comparable à une perturbation du système circulatoire humain, cela nécessite des campagnes de sensibilisation et des solutions innovantes comme l'aménagement des littoraux."
+    "text": "Le réchauffement et la fonte des glaces modifient les courants océaniques, provoquant des changements climatiques majeurs (ex. hivers plus rigoureux en Europe), réduisant l'absorption du CO2 et perturbant la chaîne alimentaire marine. Comparable à une perturbation du système circulatoire humain, cela nécessite des campagnes de sensibilisation et des solutions innovantes comme l'aménagement des littoraux.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens"
   },
   {
-    "text": "L’acidification des océans, due à l’absorption massive de CO₂, fragilise les coquilles, coraux et chaînes alimentaires marines, perturbant les écosystèmes. Comparable à l'ostéoporose chez l’humain, elle affaiblit les structures vitales des organismes. Des solutions comme la gestion des puits de carbone ou la capture directe du CO₂ sont urgentes pour limiter les dégâts."
+    "text": "L’acidification des océans, due à l’absorption massive de CO₂, fragilise les coquilles, coraux et chaînes alimentaires marines, perturbant les écosystèmes. Comparable à l'ostéoporose chez l’humain, elle affaiblit les structures vitales des organismes. Des solutions comme la gestion des puits de carbone ou la capture directe du CO₂ sont urgentes pour limiter les dégâts.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens"
   },
   {
-    "text": "L’élévation du niveau de la mer, causée par la fonte des glaces et l’expansion thermique, accélère l’érosion côtière, augmente les inondations et menace les territoires insulaires. Comparable à un lymphœdème humain, elle reflète un déséquilibre des fluides planétaires. La restauration des mangroves, le renforcement des communautés et des actions politiques globales sont essentielles pour limiter l’impact."
+    "text": "L’élévation du niveau de la mer, causée par la fonte des glaces et l’expansion thermique, accélère l’érosion côtière, augmente les inondations et menace les territoires insulaires. Comparable à un lymphœdème humain, elle reflète un déséquilibre des fluides planétaires. La restauration des mangroves, le renforcement des communautés et des actions politiques globales sont essentielles pour limiter l’impact.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens"
   },
   {
-    "text": "La prolifération d'algues toxiques désoxygène l'eau, tue des espèces marines et altère les habitats, menaçant ainsi la biodiversité. Ce phénomène, comparable à une maladie pulmonaire grave chez l'humain, perturbe la respiration des écosystèmes marins, compromettant leur capacité à soutenir la vie. Des actions comme la transition vers l'agroécologie, des recours juridiques et la participation à la gouvernance sont essentielles pour lutter contre ce fléau."
+    "text": "La prolifération d'algues toxiques désoxygène l'eau, tue des espèces marines et altère les habitats, menaçant ainsi la biodiversité. Ce phénomène, comparable à une maladie pulmonaire grave chez l'humain, perturbe la respiration des écosystèmes marins, compromettant leur capacité à soutenir la vie. Des actions comme la transition vers l'agroécologie, des recours juridiques et la participation à la gouvernance sont essentielles pour lutter contre ce fléau.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens"
   },
   {
-    "text": "La pollution des océans par les plastiques affecte la faune marine, causant des obstructions, des blessures, et des perturbations dans la chaîne alimentaire, avec des conséquences sur la santé humaine. Comparable aux reins, qui filtrent les toxines du sang, les océans sont saturés de microplastiques, menaçant leur capacité à se régénérer. Des actions comme la collecte des déchets, la valorisation du plastique et la réduction de la consommation sont essentielles pour préserver nos océans et protéger la biodiversité." 
+    "text": "La pollution des océans par les plastiques affecte la faune marine, causant des obstructions, des blessures, et des perturbations dans la chaîne alimentaire, avec des conséquences sur la santé humaine. Comparable aux reins, qui filtrent les toxines du sang, les océans sont saturés de microplastiques, menaçant leur capacité à se régénérer. Des actions comme la collecte des déchets, la valorisation du plastique et la réduction de la consommation sont essentielles pour préserver nos océans et protéger la biodiversité.",
+    "choix1": "Créer des aires marines protégées",
+    "choix2": "Restaurer les récifs coralliens" 
   }
 ]
